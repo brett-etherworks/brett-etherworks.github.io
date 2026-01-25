@@ -1,0 +1,196 @@
+/* GRAPH PAPER BACKGROUND OPTIONS FOR DISSERTATION WEBSITE */
+/* Add one of these to the body selector in styles.css */
+
+/* ================================================
+   OPTION 1: CLASSIC GRAPH PAPER (SUBTLE)
+   ================================================ */
+body.graph-classic {
+    background-color: #fafafa;
+    background-image: 
+        linear-gradient(#e0e0e0 1px, transparent 1px),
+        linear-gradient(90deg, #e0e0e0 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* ================================================
+   OPTION 2: DOT GRID (CLEAN & MODERN)
+   ================================================ */
+body.graph-dots {
+    background-color: #fafafa;
+    background-image: 
+        radial-gradient(circle, #d0d0d0 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* ================================================
+   OPTION 3: BOLD GRAPH PAPER (MORE VISIBLE)
+   ================================================ */
+body.graph-bold {
+    background-color: #fafafa;
+    background-image: 
+        linear-gradient(#c0c0c0 1px, transparent 1px),
+        linear-gradient(90deg, #c0c0c0 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* With major gridlines every 100px */
+body.graph-bold-major {
+    background-color: #fafafa;
+    background-image: 
+        linear-gradient(#e0e0e0 1px, transparent 1px),
+        linear-gradient(90deg, #e0e0e0 1px, transparent 1px),
+        linear-gradient(#111 2px, transparent 2px),
+        linear-gradient(90deg, #111 2px, transparent 2px);
+    background-size: 20px 20px, 20px 20px, 100px 100px, 100px 100px;
+}
+
+/* ================================================
+   OPTION 4: ISOMETRIC GRID (PLAYFUL)
+   ================================================ */
+body.graph-isometric {
+    background-color: #fafafa;
+    background-image:
+        linear-gradient(30deg, #e0e0e0 12%, transparent 12.5%, transparent 87%, #e0e0e0 87.5%, #e0e0e0),
+        linear-gradient(150deg, #e0e0e0 12%, transparent 12.5%, transparent 87%, #e0e0e0 87.5%, #e0e0e0),
+        linear-gradient(30deg, #e0e0e0 12%, transparent 12.5%, transparent 87%, #e0e0e0 87.5%, #e0e0e0),
+        linear-gradient(150deg, #e0e0e0 12%, transparent 12.5%, transparent 87%, #e0e0e0 87.5%, #e0e0e0);
+    background-size: 40px 70px;
+    background-position: 0 0, 0 0, 20px 35px, 20px 35px;
+}
+
+/* ================================================
+   OPTION 5: PIXEL/DATA GRID (TECH AESTHETIC)
+   ================================================ */
+body.graph-pixels {
+    background-color: #fafafa;
+    background-image: 
+        linear-gradient(#e0e0e0 1px, transparent 1px),
+        linear-gradient(90deg, #e0e0e0 1px, transparent 1px);
+    background-size: 10px 10px;
+}
+
+/* ================================================
+   OPTION 6: BLUEPRINT STYLE (PROFESSIONAL)
+   ================================================ */
+body.graph-blueprint {
+    background-color: #e8f0f8;
+    background-image: 
+        linear-gradient(#c8d8e8 1px, transparent 1px),
+        linear-gradient(90deg, #c8d8e8 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* ================================================
+   RECOMMENDED: DOT GRID WITH PERSONALITY
+   ================================================ */
+body.graph-recommended {
+    background-color: #fafafa;
+    /* Base dot grid */
+    background-image: 
+        radial-gradient(circle at 0% 0%, #d0d0d0 1.5px, transparent 1.5px),
+        radial-gradient(circle at 50% 50%, #d0d0d0 1.5px, transparent 1.5px);
+    background-size: 20px 20px, 40px 40px;
+    background-position: 0 0, 10px 10px;
+}
+
+/* ================================================
+   EXTRA FUN: GLITCH GRID (CULTURE JAM!)
+   ================================================ 
+   This one adds some randomness/imperfection
+   You'd need to create an SVG or PNG for true "glitch"
+   but this gives a similar vibe with offset grids
+*/
+body.graph-glitch {
+    background-color: #fafafa;
+    background-image: 
+        linear-gradient(#e0e0e0 1px, transparent 1px),
+        linear-gradient(90deg, #e0e0e0 1px, transparent 1px),
+        linear-gradient(#d0d0d0 1px, transparent 1px),
+        linear-gradient(90deg, #d0d0d0 1px, transparent 1px);
+    background-size: 20px 20px, 20px 20px, 21px 19px, 19px 21px;
+    background-position: 0 0, 0 0, 2px 3px, 3px 2px;
+}
+
+/* ================================================
+   USAGE INSTRUCTIONS
+   ================================================
+   
+   To use any of these:
+   
+   1. In styles.css, find the body selector
+   2. Add one of the class names above to the body tag in your HTML
+   
+   For example, in index.html change:
+   <body class="main-page">
+   
+   To:
+   <body class="main-page graph-dots">
+   
+   Or you can just copy the background properties directly into 
+   the body selector in styles.css
+   
+   ================================================
+   FOR DISSERTATION FIGURES
+   ================================================
+   
+   Create a PNG or SVG with the same pattern:
+   - 400x400px image
+   - Same grid spacing (20px)
+   - Export as PNG with transparency
+   - Use as background in your Word doc or design tool
+   
+   Or use the CSS to create an HTML div, screenshot it,
+   and use that image in your dissertation!
+   
+*/
+
+/* ================================================
+   BONUS: CONTAINER BACKGROUNDS
+   ================================================
+   You can also add subtle grids to just the white 
+   content containers for extra texture
+*/
+
+section.with-grid {
+    background-color: white;
+    background-image: 
+        radial-gradient(circle, #f5f5f5 1px, transparent 1px);
+    background-size: 15px 15px;
+}
+
+/* ================================================
+   MAKING IT MORE FUN: ADDITIONAL ELEMENTS
+   ================================================ */
+
+/* Add a subtle grid shadow effect to boxes */
+.box-with-grid-shadow {
+    box-shadow: 
+        8px 8px 0px #111,
+        8px 8px 0px 2px #fafafa,
+        16px 16px 0px 2px #111 !important;
+}
+
+/* Animated grid that subtly moves (very subtle!) */
+@keyframes grid-shift {
+    0%, 100% { background-position: 0 0; }
+    50% { background-position: 2px 2px; }
+}
+
+body.graph-animated {
+    background-color: #fafafa;
+    background-image: 
+        radial-gradient(circle, #d0d0d0 1.5px, transparent 1.5px);
+    background-size: 20px 20px;
+    animation: grid-shift 20s ease-in-out infinite;
+}
+
+/* Grid that appears on hover over sections */
+section.hover-grid {
+    transition: background-image 0.3s ease;
+}
+
+section.hover-grid:hover {
+    background-image: 
+        radial-gradient(circle, #f0f0f0 1px, transparent 1px);
+    background-size: 10px 10px;
+}

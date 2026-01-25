@@ -1,0 +1,39 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="dot-grid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="0" cy="0" r="1.5" fill="#d0d0d0"/>
+    </pattern>
+    
+    <pattern id="line-grid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e0e0e0" stroke-width="1"/>
+    </pattern>
+    
+    <pattern id="glitch-grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <!-- Regular dots -->
+      <circle cx="0" cy="0" r="1.5" fill="#d0d0d0"/>
+      <circle cx="20" cy="0" r="1.5" fill="#d0d0d0"/>
+      <circle cx="0" cy="20" r="1.5" fill="#d0d0d0"/>
+      <circle cx="20" cy="20" r="1.5" fill="#d0d0d0"/>
+      
+      <!-- "Glitched" dots - slightly offset or different size -->
+      <circle cx="10" cy="10" r="2" fill="#c0c0c0" opacity="0.7"/>
+      <circle cx="30" cy="10" r="1" fill="#d0d0d0"/>
+      <circle cx="10" cy="31" r="1.5" fill="#d0d0d0"/>
+      <circle cx="29" cy="30" r="1.5" fill="#d0d0d0"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="400" fill="#fafafa"/>
+  
+  <!-- Choose one pattern by uncommenting: -->
+  
+  <!-- DOT GRID -->
+  <rect width="400" height="400" fill="url(#dot-grid)"/>
+  
+  <!-- LINE GRID (comment out dot grid above, uncomment this) -->
+  <!-- <rect width="400" height="400" fill="url(#line-grid)"/> -->
+  
+  <!-- GLITCH GRID (comment out others, uncomment this) -->
+  <!-- <rect width="400" height="400" fill="url(#glitch-grid)"/> -->
+</svg>
