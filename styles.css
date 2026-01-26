@@ -122,9 +122,6 @@ nav {
     padding: 20px;
     margin-bottom: 40px;
     background: white;
-    position: sticky;
-    top: 20px;
-    z-index: 100;
     box-shadow: 6px 6px 0px #111;
 }
 
@@ -225,7 +222,6 @@ section {
     padding: 30px;
     margin-bottom: 40px;
     background: white;
-    scroll-margin-top: 140px;
     box-shadow: 6px 6px 0px #111;
 }
 
