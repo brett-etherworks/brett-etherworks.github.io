@@ -344,7 +344,7 @@ p {
     box-shadow: 10px 10px 0px #111;
     position: relative;
 }
-
+/*
 .video-container::before {
     content: "◉ REC";
     position: absolute;
@@ -357,7 +357,7 @@ p {
     z-index: 10;
     font-weight: bold;
 }
-
+*/
 .video-wrapper {
     position: relative;
     padding-bottom: 56.25%;
